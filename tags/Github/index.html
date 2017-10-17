@@ -15,17 +15,12 @@
 
 
 
-<meta name="description" content="How to make a blog#文章描述">
-<meta name="keywords" content="Github,Hexo">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo for github">
-<meta property="og:url" content="http://yoursite.com/2017/10/17/hexo-for-github/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/tags/Github/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="How to make a blog#文章描述">
-<meta property="og:updated_time" content="2017-10-17T09:07:37.904Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo for github">
-<meta name="twitter:description" content="How to make a blog#文章描述">
+<meta name="twitter:title" content="Hexo">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -57,7 +52,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>hexo for github | Hexo</title>
+<title>Tag: Github | Hexo</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,9 +62,9 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: true,
+        isPost: false,
         isArchive: false,
-        isTag: false,
+        isTag: true,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
@@ -257,180 +252,60 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hexo-for-github" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2017/10/17/hexo-for-github/" class="article-date">
-      <time datetime="2017-10-17T08:29:05.000Z" itemprop="datePublished">2017-10-17</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2017/10/17/hexo-for-github/" class="archive-article-date">
+      <time datetime="2017-10-17T08:29:05.000Z" itemprop="datePublished">10-17</time>
 </a>
 
 
-    </div>
+        </div>
+         
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      hexo for github
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/10/17/hexo-for-github/">hexo for github</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+        <div class="article-info info-on-archive">
+          
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/笔记/">笔记</a>
     </div>
 
 
-        
+          
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
     </div>
 
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="github-and-hexo"><a href="#github-and-hexo" class="headerlink" title="github and hexo"></a>github and hexo</h1><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><ul>
-<li>git <a href="https://nodejs.org/dist/v6.11.4/node-v6.11.4-x86.msi" target="_blank" rel="external">X86</a>  <a href="https://nodejs.org/dist/v6.11.4/node-v6.11.4-x64.msi" target="_blank" rel="external">X64</a><br>运行Git Bash验证：<figure class="highlight plain"><figcaption><span>--version```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">* node [X86](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-32-bit.exe)  [X64](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-64-bit.exe)</div><div class="line">验证：```node -v``` 和 ```npm -v</div></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="2-注册Github"><a href="#2-注册Github" class="headerlink" title="2.注册Github"></a>2.注册Github</h3><p>  新建仓库：user.github.io</p>
-<h3 id="3-安装-hexo"><a href="#3-安装-hexo" class="headerlink" title="3.安装 hexo"></a>3.安装 <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a></h3><p>  安装：<figure class="highlight plain"><figcaption><span>install hexo-cli -g ```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">验证：```hexo version</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<h3 id="4-新建项目"><a href="#4-新建项目" class="headerlink" title="4.新建项目"></a>4.新建项目</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init user.github.io</div></pre></td></tr></table></figure>
-<p>  cd user.github.io<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
-<p>  检验：<figure class="highlight plain"><figcaption><span>server```或者```hexo s``` 然后访问 [http://localhost:4000](http://localhost:4000/)</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 5.关联Github和Hexo</div><div class="line"></div><div class="line">  - 生成SSH-Key：```ssh-keygen -t rsa -C &quot;user@email.com&quot;```输入密码或为空，会生成```C:\users\user\.ssh\id_rsa.pub```文件，打开复制全部内容，打开[https://github.com/settings/ssh](https://github.com/settings/ssh)新建new SSH Key粘贴进去就好。</div><div class="line"></div><div class="line">  - 检验：```ssh -T git@github.com```选择yes看到欢迎语就好了</div><div class="line"></div><div class="line">  - 配置Git个人信息</div><div class="line">  用户名：```git config --global user.name &quot;user&quot;</div></pre></td></tr></table></figure></p>
-<p>  邮箱：<figure class="highlight plain"><figcaption><span>config --global user.email "email"```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">配置Deployment，修改文件夹里的 _config.yml文件最后（注：冒号后面有个空格）</div></pre></td></tr></table></figure></p>
-<p>  deploy:<br>  type: git<br>  repo: git@github.com:user/user.github.io.git<br>  branch: master<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 6.本地文件提交到GitHub</div></pre></td></tr></table></figure></p>
-<p>  npm install hexo-deployer-git –save //安装部署插件<br>  hexo clean //生成新的 public文件<br>  hexo generate //生成新的 public文件<br>  hexo deploy //部署<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">  </div><div class="line">### 7.Hexo基本操作</div><div class="line">  </div><div class="line">  * 新建文章: ``` hexo new &quot;new post&quot; ``` 可以到其目录编辑 .md 文件，也可以直接在所在的文件夹创建 .md 文件。</div><div class="line">  </div><div class="line">  * 文章抬头：</div></pre></td></tr></table></figure></p>
-<p>  title: hexo for github<br>  date: 2017-10-17 16:29:05<br>  description: How to make a blog #文章描述<br>  categories: #文章分类<br>  - 笔记<br>  tags: #文章标签<br>  - Github<br>  - Hexo<br>  toc: true # 生成目录<br>  author: yyh0301<br>  comments:<br>  original:<br>  permalink: #指定链接<br>  ```</p>
-
-      
-    </div>
-    
-  </div>
-  
-    
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/17/hexo-for-github/">hexo for github</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
-        <p><span>发布时间:</span>2017-10-17, 16:29:05</p>
-        <p><span>最后更新:</span>2017-10-17, 17:07:37</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/17/hexo-for-github/" title="hexo for github">http://yoursite.com/2017/10/17/hexo-for-github/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/10/17/hexo-for-github/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-        </p>
-    </div>
-
-
-
-    <nav id="article-nav">
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/10/16/hello-hexo/">
-                    hello hexo
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#github-and-hexo"><span class="toc-number">1.</span> <span class="toc-text">github and hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-下载"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-注册Github"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.注册Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安装-hexo"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.安装 hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-新建项目"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.新建项目</span></a></li></ol></li></ol></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-    <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
         </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"hexo for github　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
-
-
-
-
-
-
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
 
     
 
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
-        
-
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-
-        
-            <a href="/2017/10/16/hello-hexo/" title="下一篇: hello hexo">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/17/hexo-for-github/">hexo for github</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/16/hello-hexo/">hello hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/16/hello-world/">Hello World</a></li></ul>
-
-
-
-
-    <script>
-        
-    </script>
 </div>
       <footer id="footer">
     <div class="outer">
