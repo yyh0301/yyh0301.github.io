@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Native-fish</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-10-18T02:51:35.839Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>yyh0301</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo for github</title>
+    <link href="http://yoursite.com/2017/10/17/hexo-for-github/"/>
+    <id>http://yoursite.com/2017/10/17/hexo-for-github/</id>
+    <published>2017-10-17T08:29:05.000Z</published>
+    <updated>2017-10-18T02:51:35.839Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo-for-github"><a href="#hexo-for-github" class="headerlink" title="hexo for github"></a>hexo for github</h1><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><ul><li><p>git <a href="https://nodejs.org/dist/v6.11.4/node-v6.11.4-x86.msi" target="_blank" rel="external">X86</a>  <a href="https://nodejs.org/dist/v6.11.4/node-v6.11.4-x64.msi" target="_blank" rel="external">X64</a></p><p>运行Git Bash验证：<strong> git –version </strong></p></li><li><p>node <a href="https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-32-bit.exe" target="_blank" rel="external">X86</a>  <a href="https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-64-bit.exe" target="_blank" rel="external">X64</a></p><p>验证：<strong> node -v </strong> 和 <strong> npm -v </strong></p></li></ul><h3 id="2-注册Github"><a href="#2-注册Github" class="headerlink" title="2.注册Github"></a>2.注册Github</h3><p>  新建仓库：user.github.io</p><h3 id="3-安装-hexo"><a href="#3-安装-hexo" class="headerlink" title="3.安装 hexo"></a>3.安装 <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a></h3><p>  安装：<strong> npm install hexo-cli -g </strong></p><p>  验证：<strong> hexo version </strong></p><a id="more"></a><h3 id="4-新建项目"><a href="#4-新建项目" class="headerlink" title="4.新建项目"></a>4.新建项目</h3><p>  <strong><br>  hexo init user.github.io<br>  cd user.github.io<br>  npm install   </strong></p><p>  检验：<strong> hexo server </strong>或者<strong> hexo s </strong> 然后访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000</a></p><h3 id="5-关联Github和Hexo"><a href="#5-关联Github和Hexo" class="headerlink" title="5.关联Github和Hexo"></a>5.关联Github和Hexo</h3><ul><li><p>生成SSH-Key：<strong> ssh-keygen -t rsa -C “user@email.com” </strong>输入密码或为空，会生成”C:\users\user.ssh\id_rsa.pub”文件，打开复制全部内容，打开<a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a>新建new SSH Key粘贴进去就好。</p></li><li><p>检验：<strong> ssh -T git@github.com </strong>选择yes看到欢迎语就好了</p></li><li><p>配置Git个人信息</p><p>用户名：<strong> git config –global user.name “user” </strong></p><p>邮箱：<strong> git config –global user.email “email” </strong></p><p>配置Deployment，修改文件夹里的 _config.yml文件最后（注：冒号后面有个空格）</p><p><strong><br>deploy:<br>type: git<br>repo: git@github.com:user/user.github.io.git<br>branch: master</strong></p></li></ul><h3 id="6-本地文件提交到GitHub"><a href="#6-本地文件提交到GitHub" class="headerlink" title="6.本地文件提交到GitHub"></a>6.本地文件提交到GitHub</h3><p>  <strong><br>  npm install hexo-deployer-git –save //安装部署插件<br>  hexo clean //生成新的 public文件<br>  hexo generate //生成新的 public文件<br>  hexo deploy //部署  </strong></p><h3 id="7-Hexo基本操作"><a href="#7-Hexo基本操作" class="headerlink" title="7.Hexo基本操作"></a>7.Hexo基本操作</h3><ul><li><p>新建文章: <strong> hexo new “new post” </strong> 可以到其目录编辑 .md 文件，也可以直接在所在的文件夹创建 .md 文件。</p></li><li><p>文章抬头：</p><p><strong><br>title: hexo for github<br>date: 2017-10-17 16:29:05<br>description: How to make a blog #文章描述<br>categories: #文章分类<br>- 笔记<br>tags: #文章标签<br>- Github<br>- Hexo<br>toc: true # 生成目录<br>author: yyh0301<br>comments:<br>original:<br>permalink: #指定链接</strong></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      How to make a blog#文章描述
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello hexo</title>
+    <link href="http://yoursite.com/2017/10/16/hello-hexo/"/>
+    <id>http://yoursite.com/2017/10/16/hello-hexo/</id>
+    <published>2017-10-16T07:02:32.000Z</published>
+    <updated>2017-10-17T08:22:02.855Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hello-hexo"><a href="#Hello-hexo" class="headerlink" title="Hello hexo"></a>Hello hexo</h1><p>Hi! Weclome to my website.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hello-hexo&quot;&gt;&lt;a href=&quot;#Hello-hexo&quot; class=&quot;headerlink&quot; title=&quot;Hello hexo&quot;&gt;&lt;/a&gt;Hello hexo&lt;/h1&gt;&lt;p&gt;Hi! Weclome to my website.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/10/16/hello-world/"/>
+    <id>http://yoursite.com/2017/10/16/hello-world/</id>
+    <published>2017-10-16T06:27:36.646Z</published>
+    <updated>2017-10-16T06:27:36.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
