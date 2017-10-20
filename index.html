@@ -183,7 +183,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -193,7 +193,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -203,7 +203,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -240,125 +240,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/19/hexo and github.resource/commit/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yyh0301">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Native-fish">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/19/hexo and github.resource/commit/" itemprop="url">Unbenannt</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-19T11:34:54+08:00">
-                2017-10-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            {"compress":true,"commitItems":[["a1544037-be34-4cbb-a331-cf5acb7d060a",1508384094335,"",[[1508384040596,["Administrator@BF-20170625NRIP",[[1,0,"*   笔记\n    tags: #文章标签\n*   Github\n*   Hexo\n    toc: true # 生成目录\n    author: yyh0301\n    comments:\n    original:\n    permalink: #指定链接\n\n* * *\n\n# [](#hexo-for-github)hexo for github\n\n*   [hexo for github](#hexo-for-github)\n    *   [1.下载](#1)\n    *   [2.注册Github](#2github)\n    *   [3.安装 hexo](#3-hexo)\n    *   [4.新建项目](#4)\n    *   [5.关联Github和Hexo](#5githubhexo)\n    *   [6.本地文件提交到GitHub](#6github)\n    *   [7.Hexo新建文章](#7hexo)\n    *   [8.新建页面](#8)\n    *   [9.更换主题](#9)\n\n### [](#1)1.下载\n\n*   git [X86](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x86.msi) [X64](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x64.msi)\n\n运行Git Bash验证：** git –version**\n\n*   node [X86](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-32-bit.exe) [X64](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-64-bit.exe)\n\n验证：** node -v **和 **npm -v**\n\n### [](#2github)2.注册Github\n\n新建仓库：user.github.io\n\n### [](#3-hexo)3.安装 [hexo](https://hexo.io/zh-cn/)\n\n安装：** npm install hexo-cli -g**\n\n验证：** hexo version**\n\n### [](#4)4.新建项目\n\n **hexo init user.github.io\ncd user.github.io\nnpm install** \n\n检验：** hexo server **或者** hexo s **然后访问 [](http://localhost:4000/)[](http://localhost:4000)[http://localhost:4000](http://localhost:4000)\n\n### [](#5githubhexo)5.关联Github和Hexo\n\n*   生成SSH-Key：** ssh-keygen -t rsa -C “[](mailto:user@email.com)[user@email.com](mailto:user@email.com)” **输入密码或为空，会生成”C:\\users\\user.ssh\\id_rsa.pub”文件，打开复制全部内容，打开[](https://github.com/settings/ssh)[](https://github.com/settings/ssh)[https://github.com/settings/ssh](https://github.com/settings/ssh)新建new SSH Key粘贴进去就好。\n*   检验：** ssh -T [](mailto:git@github.com)[git@github.com](mailto:git@github.com) **选择yes看到欢迎语就好了\n*   配置Git个人信息\n\n用户名：** git config –global user.name “user”**\n\n邮箱：** git config –global user.email “email”**\n\n配置Deployment，修改文件夹里的 _config.yml文件最后（注：冒号后面有个空格）\n **deploy:\ntype: git\nrepo: [](mailto:git@github.com)[git@github.com](mailto:git@github.com):user/user.github.io.git\nbranch: master** \n\n### [](#6github)6.本地文件提交到GitHub\n\n **npm install hexo-deployer-git –save //安装部署插件\nhexo clean //生成新的 public文件\nhexo generate //生成新的 public文件\nhexo deploy //部署** \n\n### [](#7hexo)7.Hexo新建文章\n\n*   新建文章: **hexo new “new post” **可以到其目录编辑 .md 文件，也可以直接在所在的文件夹创建 .md 文件。\n\n*   文章抬头：\n\n```\ntitle: hexo for github\ndate: 2017-10-17 16:29:05\ndescription: How to make a blog #文章描述\ncategories: #文章分类\n- 笔记\ntags: #文章标签\n- Github\n- Hexo\ntoc: true # 生成目录\nauthor: yyh0301\ncomments:\noriginal:\npermalink: #指定链接\n\n```\n\n### [](#8)8.新建页面\n\n命令：** hexo new page “page name” **,需要修改对应主题的_config.yml里的menu增加对应的页面链接才可以\n\n### [](#9)9.更换主题\n\n搜索找到对应主题如“next”主题，一般会提供安装代码，如：\n`git clone https://git.com/next/hexo-next-themes.git themes/next`\n然后修改根目录的_config.yml的themes选项，修改主题名称，重启hexo server服务就可以预览效果了。"]],[0,0],[2773,2773]]],[1508384047393,["Administrator@BF-20170625NRIP",[[-1,0,"*   笔记\n    tags: #文章标签\n*   Github\n*   Hexo\n    toc: true # 生成目录\n    author: yyh0301\n    comments:\n    original:\n    permalink: #指定链接\n\n* * *\n\n# [](#hexo-for-github)hexo for github\n\n*   [hexo for github](#hexo-for-github)\n    *   [1.下载](#1)\n    *   [2.注册Github](#2github)\n    *   [3.安装 hexo](#3-hexo)\n    *   [4.新建项目](#4)\n    *   [5.关联Github和Hexo](#5githubhexo)\n    *   [6.本地文件提交到GitHub](#6github)\n    *   [7.Hexo新建文章](#7hexo)\n    *   [8.新建页面](#8)\n    *   [9.更换主题](#9)\n\n### [](#1)1.下载\n\n*   git [X86](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x86.msi) [X64](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x64.msi)\n\n运行Git Bash验证：** git –version**\n\n*   node [X86](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-32-bit.exe) [X64](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-64-bit.exe)\n\n验证：** node -v **和 **npm -v**\n\n### [](#2github)2.注册Github\n\n新建仓库：user.github.io\n\n### [](#3-hexo)3.安装 [hexo](https://hexo.io/zh-cn/)\n\n安装：** npm install hexo-cli -g**\n\n验证：** hexo version**\n\n### [](#4)4.新建项目\n\n **hexo init user.github.io\ncd user.github.io\nnpm install** \n\n检验：** hexo server **或者** hexo s **然后访问 [](http://localhost:4000/)[](http://localhost:4000)[http://localhost:4000](http://localhost:4000)\n\n### [](#5githubhexo)5.关联Github和Hexo\n\n*   生成SSH-Key：** ssh-keygen -t rsa -C “[](mailto:user@email.com)[user@email.com](mailto:user@email.com)” **输入密码或为空，会生成”C:\\users\\user.ssh\\id_rsa.pub”文件，打开复制全部内容，打开[](https://github.com/settings/ssh)[](https://github.com/settings/ssh)[https://github.com/settings/ssh](https://github.com/settings/ssh)新建new SSH Key粘贴进去就好。\n*   检验：** ssh -T [](mailto:git@github.com)[git@github.com](mailto:git@github.com) **选择yes看到欢迎语就好了\n*   配置Git个人信息\n\n用户名：** git config –global user.name “user”**\n\n邮箱：** git config –global user.email “email”**\n\n配置Deployment，修改文件夹里的 _config.yml文件最后（注：冒号后面有个空格）\n **deploy:\ntype: git\nrepo: [](mailto:git@github.com)[git@github.com](mailto:git@github.com):user/user.github.io.git\nbranch: master** \n\n### [](#6github)6.本地文件提交到GitHub\n\n **npm install hexo-deployer-git –save //安装部署插件\nhexo clean //生成新的 public文件\nhexo generate //生成新的 public文件\nhexo deploy //部署** \n\n### [](#7hexo)7.Hexo新建文章\n\n*   新建文章: **hexo new “new post” **可以到其目录编辑 .md 文件，也可以直接在所在的文件夹创建 .md 文件。\n\n*   文章抬头：\n\n```\ntitle: hexo for github\ndate: 2017-10-17 16:29:05\ndescription: How to make a blog #文章描述\ncategories: #文章分类\n- 笔记\ntags: #文章标签\n- Github\n- Hexo\ntoc: true # 生成目录\nauthor: yyh0301\ncomments:\noriginal:\npermalink: #指定链接\n\n```\n\n### [](#8)8.新建页面\n\n命令：** hexo new page “page name” **,需要修改对应主题的_config.yml里的menu增加对应的页面链接才可以\n\n### [](#9)9.更换主题\n\n搜索找到对应主题如“next”主题，一般会提供安装代码，如：\n`git clone https://git.com/next/hexo-next-themes.git themes/next`\n然后修改根目录的_config.yml的themes选项，修改主题名称，重启hexo server服务就可以预览效果了。"]],[2773,2773],[0,0]]],[1508384048574,["Administrator@BF-20170625NRIP",[[1,0,"*   笔记\n    tags: #文章标签\n*   Github\n*   Hexo\n    toc: true # 生成目录\n    author: yyh0301\n    comments:\n    original:\n    permalink: #指定链接\n\n* * *\n\n# [](#hexo-for-github)hexo for github\n\n*   [hexo for github](#hexo-for-github)\n    *   [1.下载](#1)\n    *   [2.注册Github](#2github)\n    *   [3.安装 hexo](#3-hexo)\n    *   [4.新建项目](#4)\n    *   [5.关联Github和Hexo](#5githubhexo)\n    *   [6.本地文件提交到GitHub](#6github)\n    *   [7.Hexo新建文章](#7hexo)\n    *   [8.新建页面](#8)\n    *   [9.更换主题](#9)\n\n### [](#1)1.下载\n\n*   git [X86](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x86.msi) [X64](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x64.msi)\n\n运行Git Bash验证：** git –version**\n\n*   node [X86](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-32-bit.exe) [X64](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-64-bit.exe)\n\n验证：** node -v **和 **npm -v**\n\n### [](#2github)2.注册Github\n\n新建仓库：user.github.io\n\n### [](#3-hexo)3.安装 [hexo](https://hexo.io/zh-cn/)\n\n安装：** npm install hexo-cli -g**\n\n验证：** hexo version**\n\n### [](#4)4.新建项目\n\n **hexo init user.github.io\ncd user.github.io\nnpm install** \n\n检验：** hexo server **或者** hexo s **然后访问 [](http://localhost:4000/)[](http://localhost:4000)[http://localhost:4000](http://localhost:4000)\n\n### [](#5githubhexo)5.关联Github和Hexo\n\n*   生成SSH-Key：** ssh-keygen -t rsa -C “[](mailto:user@email.com)[user@email.com](mailto:user@email.com)” **输入密码或为空，会生成”C:\\users\\user.ssh\\id_rsa.pub”文件，打开复制全部内容，打开[](https://github.com/settings/ssh)[](https://github.com/settings/ssh)[https://github.com/settings/ssh](https://github.com/settings/ssh)新建new SSH Key粘贴进去就好。\n*   检验：** ssh -T [](mailto:git@github.com)[git@github.com](mailto:git@github.com) **选择yes看到欢迎语就好了\n*   配置Git个人信息\n\n用户名：** git config –global user.name “user”**\n\n邮箱：** git config –global user.email “email”**\n\n配置Deployment，修改文件夹里的 _config.yml文件最后（注：冒号后面有个空格）\n **deploy:\ntype: git\nrepo: [](mailto:git@github.com)[git@github.com](mailto:git@github.com):user/user.github.io.git\nbranch: master** \n\n### [](#6github)6.本地文件提交到GitHub\n\n **npm install hexo-deployer-git –save //安装部署插件\nhexo clean //生成新的 public文件\nhexo generate //生成新的 public文件\nhexo deploy //部署** \n\n### [](#7hexo)7.Hexo新建文章\n\n*   新建文章: **hexo new “new post” **可以到其目录编辑 .md 文件，也可以直接在所在的文件夹创建 .md 文件。\n\n*   文章抬头：\n\n```\ntitle: hexo for github\ndate: 2017-10-17 16:29:05\ndescription: How to make a blog #文章描述\ncategories: #文章分类\n- 笔记\ntags: #文章标签\n- Github\n- Hexo\ntoc: true # 生成目录\nauthor: yyh0301\ncomments:\noriginal:\npermalink: #指定链接\n\n```\n\n### [](#8)8.新建页面\n\n命令：** hexo new page “page name” **,需要修改对应主题的_config.yml里的menu增加对应的页面链接才可以\n\n### [](#9)9.更换主题\n\n搜索找到对应主题如“next”主题，一般会提供安装代码，如：\n`git clone https://git.com/next/hexo-next-themes.git themes/next`\n然后修改根目录的_config.yml的themes选项，修改主题名称，重启hexo server服务就可以预览效果了。"]],[0,0],[2773,2773]]],[1508384087971,["Administrator@BF-20170625NRIP",[[-1,0,"*   笔记\n    tags: #文章标签\n*   Github\n*   Hexo\n    toc: true # 生成目录\n    author: yyh0301\n    comments:\n    original:\n    permalink: #指定链接\n\n* * *\n\n# [](#hexo-for-github)hexo for github"],[1,178,""],[-1,491," "],[1,492," "],[-1,551," "],[1,552," "],[-1,628," "],[1,629," "],[-1,653," "],[1,654," "],[-1,759," "],[1,760," "],[-1,872," "],[1,873," "],[-1,880," **和 "],[1,885," **和 "],[-1,965," "],[1,966," "],[-1,1003," "],[1,1004," "],[-1,1036," "],[1,1037," "],[-1,1138," "],[1,1139," "],[-1,1150," "],[1,1151," "],[-1,1157," "],[1,1158," "],[-1,1164," "],[1,1165," "],[-1,1171," "],[1,1172," "],[-1,1324," "],[1,1325," "],[-1,1412," "],[1,1413," "],[-1,1636," "],[1,1637," "],[-1,1643," "],[1,1644," "],[-1,1708," "],[1,1709," "],[-1,1746," "],[1,1747," "],[-1,1791," "],[1,1792," "],[-1,1908," "],[1,1909," "],[-1,2211," "],[1,2212," "],[-1,2233," "],[1,2234," "],[-1,2528," "],[1,2529," "],[-1,2554," "],[1,2555," "]],[0,178],[0,0]]],[1508384092408,["Administrator@BF-20170625NRIP",[[-1,0,"\n"]],[2,2],[1,1]]],[1508384092780,["Administrator@BF-20170625NRIP",[[-1,0,"\n"]],[1,1],[0,0]]]]],["bdf77b7f-9b6b-4afe-98a2-4ce4c02f18fc",1508384193945,"*   [hexo for github](#hexo-for-github)\n    *   [1.下载](#1)\n    *   [2.注册Github](#2github)\n    *   [3.安装 hexo](#3-hexo)\n    *   [4.新建项目](#4)\n    *   [5.关联Github和Hexo](#5githubhexo)\n    *   [6.本地文件提交到GitHub](#6github)\n    *   [7.Hexo新建文章](#7hexo)\n    *   [8.新建页面](#8)\n    *   [9.更换主题](#9)\n\n### [](#1)1.下载\n\n*   git [X86](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x86.msi) [X64](https://nodejs.org/dist/v6.11.4/node-v6.11.4-x64.msi)\n\n运行Git Bash验证：** git –version**\n\n*   node [X86](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-32-bit.exe) [X64](https://github.com/git-for-windows/git/releases/download/v2.14.2.windows.3/Git-2.14.2.3-64-bit.exe)\n\n验证：** node -v **和 **npm -v**\n\n### [](#2github)2.注册Github\n\n新建仓库：user.github.io\n\n### [](#3-hexo)3.安装 [hexo](https://hexo.io/zh-cn/)\n\n安装：** npm install hexo-cli -g**\n\n验证：** hexo version**\n\n### [](#4)4.新建项目\n\n **hexo init user.github.io\ncd user.github.io\nnpm install** \n\n检验：** hexo server **或者** hexo s **然后访问 [](http://localhost:4000/)[](http://localhost:4000)[http://localhost:4000](http://localhost:4000)\n\n### [](#5githubhexo)5.关联Github和Hexo\n\n*   生成SSH-Key：** ssh-keygen -t rsa -C “[](mailto:user@email.com)[user@email.com](mailto:user@email.com)” **输入密码或为空，会生成”C:\\users\\user.ssh\\id_rsa.pub”文件，打开复制全部内容，打开[](https://github.com/settings/ssh)[](https://github.com/settings/ssh)[https://github.com/settings/ssh](https://github.com/settings/ssh)新建new SSH Key粘贴进去就好。\n*   检验：** ssh -T [](mailto:git@github.com)[git@github.com](mailto:git@github.com) **选择yes看到欢迎语就好了\n*   配置Git个人信息\n\n用户名：** git config –global user.name “user”**\n\n邮箱：** git config –global user.email “email”**\n\n配置Deployment，修改文件夹里的 _config.yml文件最后（注：冒号后面有个空格）\n **deploy:\ntype: git\nrepo: [](mailto:git@github.com)[git@github.com](mailto:git@github.com):user/user.github.io.git\nbranch: master** \n\n### [](#6github)6.本地文件提交到GitHub\n\n **npm install hexo-deployer-git –save //安装部署插件\nhexo clean //生成新的 public文件\nhexo generate //生成新的 public文件\nhexo deploy //部署** \n\n### [](#7hexo)7.Hexo新建文章\n\n*   新建文章: **hexo new “new post” **可以到其目录编辑 .md 文件，也可以直接在所在的文件夹创建 .md 文件。\n\n*   文章抬头：\n\n```\ntitle: hexo for github\ndate: 2017-10-17 16:29:05\ndescription: How to make a blog #文章描述\ncategories: #文章分类\n- 笔记\ntags: #文章标签\n- Github\n- Hexo\ntoc: true # 生成目录\nauthor: yyh0301\ncomments:\noriginal:\npermalink: #指定链接\n\n```\n\n### [](#8)8.新建页面\n\n命令：** hexo new page “page name” **,需要修改对应主题的_config.yml里的menu增加对应的页面链接才可以\n\n### [](#9)9.更换主题\n\n搜索找到对应主题如“next”主题，一般会提供安装代码，如：\n`git clone https://git.com/next/hexo-next-themes.git themes/next`\n然后修改根目录的_config.yml的themes选项，修改主题名称，重启hexo server服务就可以预览效果了。",[[1508384155074,["Administrator@BF-20170625NRIP",[[-1,2422,"[](#9)"]],[2422,2428],[2422,2422]]],[1508384159009,["Administrator@BF-20170625NRIP",[[-1,2329,"[](#8)"]],[2329,2335],[2329,2329]]],[1508384163651,["Administrator@BF-20170625NRIP",[[-1,2000,"[](#7hexo)"]],[2000,2010],[2000,2000]]],[1508384169047,["Administrator@BF-20170625NRIP",[[-1,1841,"[](#6github)"]],[1841,1853],[1841,1841]]],[1508384174715,["Administrator@BF-20170625NRIP",[[-1,1095,"[](#5githubhexo)"]],[1095,1111],[1095,1095]]],[1508384187966,["Administrator@BF-20170625NRIP",[[-1,877,"[](#4)"]],[877,883],[877,877]]],[1508384190962,["Administrator@BF-20170625NRIP",[[-1,770,"[](#3-hexo)"]],[770,781],[770,770]]],[1508384194430,["Administrator@BF-20170625NRIP",[[-1,721,"[](#2github)"]],[721,733],[721,721]]],[1508384199526,["Administrator@BF-20170625NRIP",[[-1,292,"[](#1)"]],[292,298],[292,292]]],[1508384205047,["Administrator@BF-20170625NRIP",[[-1,0,"*   [hexo for github](#hexo-for-github)\n    *   [1.下载](#1)\n    *   [2.注册Github](#2github)\n    *   [3.安装 hexo](#3-hexo)\n    *   [4.新建项目](#4)\n    *   [5.关联Github和Hexo](#5githubhexo)\n    *   [6.本地文件提交到GitHub](#6github)\n    *   [7.Hexo新建文章](#7hexo)\n    *   [8.新建页面](#8)\n    *   [9.更换主题](#9)"]],[0,286],[0,0]]],[1508384208414,["Administrator@BF-20170625NRIP",[[1,0,"[]"]],[0,0],[2,2]]],[1508384210081,["Administrator@BF-20170625NRIP",[[1,1,"t"]],[1,1],[2,2]]],[1508384210598,["Administrator@BF-20170625NRIP",[[-1,1,"t"]],[2,2],[1,1]]],[1508384211915,["Administrator@BF-20170625NRIP",[[1,1,"TOC"]],[1,1],[4,4]]],[1508384214583,["Administrator@BF-20170625NRIP",[[1,0,"\n"]],[0,0],[1,1]]],[1508384215003,["Administrator@BF-20170625NRIP",[[1,0,"\n"]],[1,1],[2,2]]],[1508384219330,["Administrator@BF-20170625NRIP",[[1,0,"HEXO FOR "]],[0,0],[9,9]]],[1508384221182,["Administrator@BF-20170625NRIP",[[-1,5,"FOR "]],[9,9],[5,5]]],[1508384222568,["Administrator@BF-20170625NRIP",[[1,5,"AND GIT"]],[5,5],[12,12]]],[1508384224116,["Administrator@BF-20170625NRIP",[[-1,10,"IT"]],[12,12],[10,10]]],[1508384225419,["Administrator@BF-20170625NRIP",[[1,10,"IT"]],[10,10],[12,12]]],[1508384226284,["Administrator@BF-20170625NRIP",[[-1,10,"IT"]],[12,12],[10,10]]],[1508384229094,["Administrator@BF-20170625NRIP",[[1,10,"ithub"]],[10,10],[15,15]]],[1508384232746,["Administrator@BF-20170625NRIP",[[-1,1,"EXO AND"]],[8,8],[1,1]]],[1508384234264,["Administrator@BF-20170625NRIP",[[1,1,"exo and"]],[1,1],[8,8]]],[1508384238064,["Administrator@BF-20170625NRIP",[[1,17,"\n"]],[15,15],[16,16]]],[1508384239722,["Administrator@BF-20170625NRIP",[[1,16,"==="]],[16,16],[19,19]]],[1508384266769,["Administrator@BF-20170625NRIP",[[1,831,"\n"]],[831,831],[832,832]]],[1508384269865,["Administrator@BF-20170625NRIP",[[1,832,"     "]],[832,832],[837,837]]],[1508384273111,["Administrator@BF-20170625NRIP",[[-1,832,"     "]],[837,837],[832,832]]],[1508384316130,["Administrator@BF-20170625NRIP",[[-1,857,"[](mailto:user@email.com)[user@email.com](mailto:"]],[857,906],[857,857]]],[1508384319816,["Administrator@BF-20170625NRIP",[[-1,871,")"]],[872,872],[871,871]]],[1508384346731,["Administrator@BF-20170625NRIP",[[-1,1104,"[](mailto:git@github.com)[git@github.com](mailto:"]],[1104,1153],[1104,1104]]],[1508384349244,["Administrator@BF-20170625NRIP",[[-1,1118,") "]],[1120,1120],[1118,1118]]],[1508384351156,["Administrator@BF-20170625NRIP",[[1,1118," "]],[1118,1118],[1119,1119]]],[1508384352781,["Administrator@BF-20170625NRIP",[[1,1121," "]],[1121,1121],[1122,1122]]],[1508384361536,["Administrator@BF-20170625NRIP",[[-1,831,"\n"]],[832,832],[831,831]]],[1508384373172,["Administrator@BF-20170625NRIP",[[1,1192," "]],[1192,1192],[1193,1193]]],[1508384374247,["Administrator@BF-20170625NRIP",[[1,1240," "]],[1240,1240],[1241,1241]]],[1508384385429,["Administrator@BF-20170625NRIP",[[-1,1294," **"],[1,1297,"```"]],[1294,1297],[1297,1297]]],[1508384386736,["Administrator@BF-20170625NRIP",[[1,1297,"\n"]],[1297,1297],[1298,1298]]],[1508384390810,["Administrator@BF-20170625NRIP",[[-1,1425,"** "]],[1425,1428],[1425,1425]]],[1508384391103,["Administrator@BF-20170625NRIP",[[1,1427,"\n"]],[1425,1425],[1426,1426]]],[1508384392076,["Administrator@BF-20170625NRIP",[[1,1426,"```"]],[1426,1426],[1429,1429]]],[1508384402240,["Administrator@BF-20170625NRIP",[[-1,1452," **"],[1,1455,"```"]],[1452,1455],[1455,1455]]],[1508384403249,["Administrator@BF-20170625NRIP",[[1,1455,"\n"]],[1455,1455],[1456,1456]]],[1508384407085,["Administrator@BF-20170625NRIP",[[-1,1574,"** "]],[1577,1577],[1574,1574]]],[1508384407489,["Administrator@BF-20170625NRIP",[[1,1576,"\n"]],[1574,1574],[1575,1575]]],[1508384408504,["Administrator@BF-20170625NRIP",[[1,1575,"```"]],[1575,1575],[1578,1578]]],[1508384498788,["Administrator@BF-20170625NRIP",[[-1,817,"* "],[1,819,"-"]],[817,819],[818,818]]],[1508384502714,["Administrator@BF-20170625NRIP",[[-1,1085,"*"],[1,1086,"-"]],[1085,1086],[1086,1086]]],[1508384505348,["Administrator@BF-20170625NRIP",[[-1,1134,"*"],[1,1135,"-"]],[1134,1135],[1135,1135]]],[1508384508328,["Administrator@BF-20170625NRIP",[[-1,1137," "]],[1138,1138],[1137,1137]]],[1508384511402,["Administrator@BF-20170625NRIP",[[-1,1087,"  "]],[1089,1089],[1087,1087]]],[1508384513401,["Administrator@BF-20170625NRIP",[[-1,819," "]],[820,820],[819,819]]],[1508384517872,["Administrator@BF-20170625NRIP",[[1,831,"*"]],[831,831],[832,832]]],[1508384521273,["Administrator@BF-20170625NRIP",[[1,873,"*"]],[871,871],[872,872]]],[1508384523457,["Administrator@BF-20170625NRIP",[[1,874," "]],[874,874],[875,875]]],[1508384535209,["Administrator@BF-20170625NRIP",[[-1,596," **"]],[597,599],[596,596]]],[1508384536361,["Administrator@BF-20170625NRIP",[[1,596,"```"]],[596,596],[599,599]]],[1508384538028,["Administrator@BF-20170625NRIP",[[1,599,"\n"]],[599,599],[600,600]]],[1508384540824,["Administrator@BF-20170625NRIP",[[-1,654,"** "]],[657,657],[654,654]]],[1508384541446,["Administrator@BF-20170625NRIP",[[1,656,"\n"]],[654,654],[655,655]]],[1508384542227,["Administrator@BF-20170625NRIP",[[1,655,"```"]],[655,655],[658,658]]],[1508384548194,["Administrator@BF-20170625NRIP",[[-1,659,"\n"]],[659,659],[658,658]]],[1508384556415,["Administrator@BF-20170625NRIP",[[-1,722,"/)[](http://localhost:4000"]],[698,724],[698,698]]],[1508384562220,["Administrator@BF-20170625NRIP",[[-1,698,"[]"]],[700,700],[698,698]]],[1508384575195,["Administrator@BF-20170625NRIP",[[-1,744,"(http://localhost:4000)"]],[744,767],[744,744]]],[1508384588589,["Administrator@BF-20170625NRIP",[[-1,880,"[](https://github.com/settings/ssh)[]"]],[880,917],[880,880]]],[1508384599258,["Administrator@BF-20170625NRIP",[[-1,946,"(https://github.com/settings/ssh)"]],[946,979],[946,946]]],[1508384602095,["Administrator@BF-20170625NRIP",[[1,946,"\n"]],[946,946],[947,947]]],[1508384604209,["Administrator@BF-20170625NRIP",[[-1,946,"\n"]],[947,947],[946,946]]],[1508384625910,["Administrator@BF-20170625NRIP",[[-1,1200,"[](mailto:git@github.com)[git@github.com](mailto:"]],[1200,1249],[1200,1200]]],[1508384627672,["Administrator@BF-20170625NRIP",[[-1,1214,")"]],[1215,1215],[1214,1214]]]]]]}
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/19/hexo and github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -378,7 +259,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/19/hexo and github/" itemprop="url">Unbenannt</a></h1>
+                <a class="post-title-link" href="/2017/10/19/hexo and github/" itemprop="url">Untitled</a></h1>
         
 
         <div class="post-meta">
@@ -388,7 +269,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-19T11:33:54+08:00">
                 2017-10-19
@@ -445,8 +326,8 @@
 <h3 id="4-新建项目"><a href="#4-新建项目" class="headerlink" title="4.新建项目"></a>4.新建项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init user.github.io</div><div class="line">cd user.github.io</div><div class="line">npm install</div></pre></td></tr></table></figure>
 <p>检验：<code>hexo server</code>或者<code>hexo s</code>然后访问 (<a href="http://localhost:4000)[http://localhost:4000" target="_blank" rel="external">http://localhost:4000)[http://localhost:4000</a>]</p>
 <h3 id="5-关联Github和Hexo"><a href="#5-关联Github和Hexo" class="headerlink" title="5.关联Github和Hexo"></a>5.关联Github和Hexo</h3><ul>
-<li>生成SSH-Key：<em> ssh-keygen -t rsa -C “user@email.com” </em> 输入密码或为空，会生成”C:\users\user.ssh\id_rsa.pub”文件，打开复制全部内容，打开(<a href="https://github.com/settings/ssh)[https://github.com/settings/ssh]新建new" target="_blank" rel="external">https://github.com/settings/ssh)[https://github.com/settings/ssh]新建new</a> SSH Key粘贴进去就好。</li>
-<li>检验：<em> ssh -T git@github.com </em> 选择yes看到欢迎语就好了</li>
+<li>生成SSH-Key：<code>ssh-keygen -t rsa -C “user@email.com”</code> 输入密码或为空，会生成”C:\users\user.ssh\id_rsa.pub”文件，打开复制全部内容，打开(<a href="https://github.com/settings/ssh)[https://github.com/settings/ssh]新建new" target="_blank" rel="external">https://github.com/settings/ssh)[https://github.com/settings/ssh]新建new</a> SSH Key粘贴进去就好。</li>
+<li>检验：<code>ssh -T git@github.com</code> 选择yes看到欢迎语就好了</li>
 <li>配置Git个人信息</li>
 </ul>
 <p>用户名：<code>git config –global user.name “user”</code></p>
@@ -539,7 +420,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-16T14:27:36+08:00">
                 2017-10-16
@@ -671,8 +552,8 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -731,7 +612,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
